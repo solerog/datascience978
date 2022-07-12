@@ -1,4 +1,4 @@
-# Day 0
+# Day 0 - Setup & git basics
 
 ## Lecture
 
@@ -58,3 +58,17 @@ git log
 ```
 
 Shows all commit history in the terminal.
+
+### Challenges
+
+Write code in VS Code.
+Do `make` after finishing the code to test if it works AND the **style**
+There can be non explained restrictions in the instructions that are checked in tests.
+After a push has been made, the mark for the assignment appears in _Kitt_
+
+If you're stuck, you can raise a ticket through _Kitt_.
+
+### Flashcards
+
+They are questions about the lectures of the day.
+They don't take long, you have to answer correctly all of them being honest.
