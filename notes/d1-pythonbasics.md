@@ -167,10 +167,16 @@ Slicing
 beatles[1:3] = ['shakira', 'ringo']
 ```
 
-Deleting an element
+Deleting an element for its index
 
 ```py
 del beatles[1]
+```
+
+Deleting an element for its value
+
+```py
+beatles.remove('shakira')
 ```
 
 - `append(element)` adds one element to the end
