@@ -38,6 +38,7 @@
 #     for beatle in beatles:
 #         writer.writerow(beatle)
 
+from urllib import response
 import requests
 
 # # url = 'https://api.github.com/users/solerog'
@@ -46,16 +47,41 @@ import requests
 
 # print(response)
 
-isbn = '0-7475-3269-9'
-key = f'ISBN:{isbn}'
+# isbn = '0-7475-3269-9'
+# key = f'ISBN:{isbn}'
 
-response = requests.get(
-    'https://openlibrary.org/api/books',
-    params={
-        'bibkeys': key,
-        'format': 'json',
-        'jscmd': 'data'
-    },
-).json()
+# response = requests.get(
+#     'https://openlibrary.org/api/books',
+#     params={
+#         'bibkeys': key,
+#         'format': 'json',
+#         'jscmd': 'data'
+#     },
+# ).json()
 
-print(response[key]['title'])
+# print(response[key]['title'])
+
+import requests
+from bs4 import BeautifulSoup
+
+# url = 'https://api.github.com/users/solerog'
+# response = requests.get(url)
+# soup = BeautifulSoup(response.content, "html.parser")
+
+# # You now can query the `soup` object!
+# soup.title.string
+# soup.find('h1')
+# soup.find_all('a')
+
+url = 'https://www.imdb.com/list/ls055386972/'
+response = requests.get(url, headers={'Accept-Language': 'en-GB'})
+soup = BeautifulSoup(response.content, "html.parser")
+movie_html = soup.find_all(class_="lister-item-content")
+movies = []
+
+for movie in movie_html:
+    title = movie.h3.a.string
+    duration = movie.p.find(class_="runtime").string.strip(" min")
+    movies.append({'title': title, 'duration': duration})
+
+print(*movies[0:10], sep='\n')

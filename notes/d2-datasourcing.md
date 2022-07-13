@@ -118,3 +118,82 @@ print(response[key]['title'])
 ```
 
 Where we send `bibkeys`, `format` and `jscmd` arguments.
+
+### Web scraping
+
+Get data from any `HTML` web page.
+`HTML` is unstructured data. It can be inspected using the `Inspect element` of a browser.
+
+```mermaid
+graph TD;
+HTML-->head;
+HTML-->body;
+head-->title;
+body-->h1;
+body-->p;
+body-->ul;
+ul-->results
+```
+
+```html
+<p class="important">This is a paragraph</p>
+<!-- <tag attribute="value">content<closingtag> -->
+```
+
+#### Beautiful soup
+
+```py
+import requests
+from bs4 import BeautifulSoup
+
+response = requests.get(url)
+soup = BeautifulSoup(response.content, "html.parser")
+
+# You now can query the `soup` object!
+soup.title.string
+soup.find('h1')
+soup.find_all('a')
+```
+
+Get response from `requests` module.
+Parse `html` code with _beautiful soup_
+
+- Search for an element:
+
+```html
+<p>A paragraph</p>
+<article>An article...</article>
+<article>Another...</article>
+```
+
+```py
+paragraph = soup.find("p") # Returns the first p
+articles = soup.find_all("article") # Returns a list of all articles
+```
+
+- Search by id
+
+```html
+<a href="https://www.lewagon.com" id="wagon">Le Wagon</a>
+```
+
+```py
+item = soup.find(id="wagon")
+```
+
+- Search by class
+
+```html
+<ul>
+  <li class="pizza">Margharita</li>
+  <li class="pizza">Calzone</li>
+  <li class="pizza">Romana</li>
+  <li class="dessert">Tiramisu</li>
+</ul>
+```
+
+```py
+items = soup.find_all("li", class_="pizza")
+```
+
+**Note** the underscore in `_pizza`
