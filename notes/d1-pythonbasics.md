@@ -322,3 +322,17 @@ def full_name(first, last, capitalize=True):
         return ' '.join([first.capitalize(), last.capitalize()])
     return ' '.join([first, last])
 ```
+
+## Debugging
+
+```py
+def connect(username, password):
+    breakpoint()
+    query = # [...]
+```
+
+`l` to show where you are
+Look at local variables + their types (e.g. username or type(username))
+`s` for _step_ into (to use before a function call, to enter that function)
+`n` for step over (go to _next_ line)
+`c` for _continue_ to next breakpoint (or end of program)
