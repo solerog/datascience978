@@ -78,9 +78,9 @@ The peak of the distribution.
 
 ### Skewness
 
-- Positive (mode < median < mean)
+- Positive / Right (mode < median < mean)
 - Symmetrical (mode = median = mean)
-- Negative (mode > median > mean)
+- Negative / Left (mode > median > mean)
 
 ## Statistical dispersion
 
