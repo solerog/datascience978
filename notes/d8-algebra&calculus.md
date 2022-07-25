@@ -1,6 +1,6 @@
 <!-- markdownlint-configure-file { "MD024": { "siblings_only": true } } -->
 
-# Day 8 - Algebra & Calculus
+# Day 08 - Algebra & Calculus
 
 ## Volcabulary
 

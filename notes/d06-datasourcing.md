@@ -1,6 +1,6 @@
 <!-- markdownlint-configure-file { "MD024": { "siblings_only": true } } -->
 
-# Day 6 -Data sourcing
+# Day 06 -Data sourcing
 
 ## Pandas I/O
 

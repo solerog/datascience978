@@ -1,6 +1,6 @@
 <!-- markdownlint-configure-file { "MD024": { "siblings_only": true } } -->
 
-# Day 8 - Statistics & probabilities
+# Day 09 - Statistics & probabilities
 
 ## Packages
 

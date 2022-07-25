@@ -1,6 +1,6 @@
 <!-- markdownlint-configure-file { "MD024": { "siblings_only": true } } -->
 
-# Day 1 - Python for Data Science
+# Day 01 - Python for Data Science
 
 ## Introduction to Python
 

@@ -1,4 +1,4 @@
-# Day 0 - Setup & git basics
+# Day 00 - Setup & git basics
 
 ## Lecture
 

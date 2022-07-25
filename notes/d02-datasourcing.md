@@ -1,6 +1,6 @@
 <!-- markdownlint-configure-file { "MD024": { "siblings_only": true } } -->
 
-# Day 2 - Data sourcing
+# Day 02 - Data sourcing
 
 ## Finding data
 

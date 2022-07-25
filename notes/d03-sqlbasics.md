@@ -1,6 +1,6 @@
 <!-- markdownlint-configure-file { "MD024": { "siblings_only": true } } -->
 
-# Day 3 - SQL Basics
+# Day 03 - SQL Basics
 
 ## Database types
 

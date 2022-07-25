@@ -1,6 +1,6 @@
 <!-- markdownlint-configure-file { "MD024": { "siblings_only": true } } -->
 
-# Day 4 - Advanced SQL
+# Day 04 - Advanced SQL
 
 ## SQL injection
 

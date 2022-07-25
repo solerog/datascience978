@@ -1,6 +1,6 @@
 <!-- markdownlint-configure-file { "MD024": { "siblings_only": true } } -->
 
-# Day 7 -Data visualization
+# Day 07 -Data visualization
 
 ## Matplotlib
 
