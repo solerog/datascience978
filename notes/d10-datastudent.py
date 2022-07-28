@@ -1,4 +1,4 @@
-from notes.d10-student import Student
+from class.student import Student
 
 # Subclass
 
