@@ -134,3 +134,30 @@ _Dense networks_ are **universal approximations** to any function with arbitrary
 💡 Last layer's neuron numbers equals the output dimension
 💡 Last layer activation is `Linear` or `Softmax`/`sigmoid`
 💡 Almost always start with `relu` activaiton function
+
+## Bonus 1
+
+[How Many Hidden Layers/Neurons to Use](https://towardsdatascience.com/beginners-ask-how-many-hidden-layers-neurons-to-use-in-artificial-neural-networks-51466afa0d3e)
+
+There are 3 classes of layers
+
+- Input (x1)
+- Hidden (as many as necessary)
+- Output (x1)
+
+The number of **neurons** in the input layer equals the number of input variables in the data to process.
+The number of **neurons** in the ouput layer equals the number of outputs associated to each input.
+
+To determine the number of Hidden layers and neurons of each layer:
+
+1. Draw an expected decision boundary to separate the classes.
+2. Express the decision boundary as a set of lines.
+3. The number of lines represent the number of **neurons** in the **first hidden layer**
+4. To connect the lines of the previous layer, a new hidden layer is added.
+5. The number of hidden neurons in each hidden layer is equal to the number of connections.
+
+In artificial neural networks, **hidden layers** are required if and only if data must be separated non-linearly. (with a single line)
+
+## Bonus 2
+
+[What is a neural network - 3Blue1Brown](https://www.youtube.com/watch?v=aircAruvnKk&ab_channel=3Blue1Brown)
